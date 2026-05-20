@@ -1,0 +1,24 @@
+<div id="app">
+  <h2>Liste des étudiants</h2>
+
+  <!-- Ajout -->
+  <input type="text" id="inputNom" placeholder="Nom de l'étudiant">
+  <select id="selectNiveau">
+    <option value="L1">L1</option>
+    <option value="L2">L2</option>
+    <option value="L3">L3</option>
+  </select>
+  <button id="btnAjouter">Ajouter</button>
+
+  <!-- Filtrage -->
+  <div id="filtres">
+    <button class="filtre" data-niveau="tous">Tous</button>
+    <button class="filtre" data-niveau="L1">L1</button>
+    <button class="filtre" data-niveau="L2">L2</button>
+    <button class="filtre" data-niveau="L3">L3</button>
+  </div>
+
+  <!-- Liste -->
+  <ul id="listeEtudiants"></ul>
+  <p id="compteur">0 étudiant(s)</p>
+</div>
