@@ -42,7 +42,7 @@ etudiants.forEach(etudiant => {
     const tr = document.createElement('tr');
     tr.className = 'hover:bg-teal-50 transition-colors';
 
-    const line = `
+    const columns = `
         <td class="px-6 py-4 font-medium text-slate-900">
             ${etudiant.nom}
         </td>
@@ -50,7 +50,7 @@ etudiants.forEach(etudiant => {
         <td class="px-6 py-4">${etudiant.age}</td>
     `;
 
-    tr.innerHTML = line;
+    tr.innerHTML = columns;
     tbody.appendChild(tr);
 });
 
